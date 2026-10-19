@@ -1,6 +1,6 @@
 # 🍕 1337 Pizza
 
-[![CI](https://github.com/elyesa-a/Pizza_Shop/actions/workflows/ci.yml/badge.svg)](https://github.com/elyesa-a/Pizza_Shop/actions/workflows/ci.yml)
+[![CI](https://github.com/elyesa-a/pizza-delivery-api/actions/workflows/ci.yml/badge.svg)](https://github.com/elyesa-a/pizza-delivery-api/actions/workflows/ci.yml)
 
 REST-Backend und Web-Frontend für einen fiktiven Pizza-Lieferdienst "für Nerds". Teamprojekt aus dem Modul *Software Engineering* an der Hochschule Darmstadt, entwickelt nach agilen Methoden mit User Stories, Code Reviews und einer vollständigen CI/CD-Pipeline.
 
