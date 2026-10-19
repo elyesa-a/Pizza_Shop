@@ -12,7 +12,7 @@ import {
     DISPATCH_START_FETCH_ORDER_DETAILS, DISPATCH_START_FETCH_ORDERS
 } from "../../constants";
 import { ActionRegister, OrderMap } from "../../types";
-import { reducer } from "../reducer/Reducer";
+import { reducer } from "../reducer/reducer";
 
 export class OrderActions implements ActionRegister {
     private actionService!: ActionService;

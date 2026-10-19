@@ -11,7 +11,7 @@ import {
     ACTION_FETCH_PIZZA_TYPE_CREATE_DATA,
 } from "../../constants";
 import { ActionRegister } from "../../types";
-import { reducer } from "../reducer/Reducer";
+import { reducer } from "../reducer/reducer";
 
 export class PizzaTypeActions implements ActionRegister {
     private actionService!: ActionService;

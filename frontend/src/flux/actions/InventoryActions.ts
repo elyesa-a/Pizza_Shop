@@ -24,7 +24,7 @@ import {
 } from "../../constants";
 import { ActionService, createErrorMessage } from "./ActionService";
 import { ActionRegister } from "../../types";
-import { reducer } from "../reducer/Reducer";
+import { reducer } from "../reducer/reducer";
 
 export class InventoryActions implements ActionRegister {
     private actionService!: ActionService;

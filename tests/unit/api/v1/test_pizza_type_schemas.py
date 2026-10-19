@@ -14,6 +14,7 @@ def pizza_type_dict():
         'price': 5,
         'description': 'Italian quality',
         'dough_id': uuid.uuid4(),
+        'sauce_id': uuid.uuid4(),
     }
 
 
@@ -40,6 +41,7 @@ def test_pizza_type_create_schema(pizza_type_dict):
     assert schema.price == pizza_type_dict['price']
     assert schema.description == pizza_type_dict['description']
     assert schema.dough_id == pizza_type_dict['dough_id']
+    assert schema.sauce_id == pizza_type_dict['sauce_id']
 
     assert not hasattr(schema, 'id')
 
