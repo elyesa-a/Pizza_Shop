@@ -37,7 +37,7 @@ RUN uv sync --frozen --no-install-project --no-cache
 
 COPY  ./app ${HOME}/app/
 COPY  ./infra/build_artifacts/docker-entrypoint.sh ${HOME}/scripts/
-COPY  ./pizza_1337_preact/dist ${HOME}/frontend/
+COPY  ./frontend/dist ${HOME}/frontend/
 COPY  ./alembic.ini ${HOME}/
 
 EXPOSE 8000

@@ -6,7 +6,7 @@ import {
     ACTION_FETCH_USERS, ACTION_SERVER_ERROR, ACTION_CHECK_DEFAULT_USER
 } from "../../constants";
 import { ActionRegister } from "../../types";
-import { reducer } from "../reducer/Reducer";
+import { reducer } from "../reducer/reducer";
 
 export class UsersActions implements ActionRegister {
     private actionService!: ActionService;

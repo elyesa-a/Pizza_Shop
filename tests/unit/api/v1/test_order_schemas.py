@@ -1,5 +1,5 @@
 import uuid
-import enum
+from app.database.models import OrderStatus
 
 from datetime import datetime
 
@@ -11,14 +11,6 @@ from app.api.v1.endpoints.order.schemas import PizzaBaseSchema, PizzaCreateSchem
     OrderBeverageQuantityBaseSchema, OrderBeverageQuantityCreateSchema
 
 
-# Enum for OrderStatus
-class OrderStatus(str, enum.Enum):
-    TRANSMITTED = 'TRANSMITTED'
-    PREPARING = 'PREPARING'
-    IN_DELIVERY = 'IN_DELIVERY'
-    COMPLETED = 'COMPLETED'
-
-
 @pytest.fixture(scope='module')
 def order_dict(create_real_address):
     return {
@@ -26,7 +18,7 @@ def order_dict(create_real_address):
         'order_datetime': datetime.now(),
         'user_id': uuid.uuid4(),
         'address': create_real_address,
-        'order_status': OrderStatus.TRANSMITTED,
+        'order_status': OrderStatus.OPEN,
     }
 
 
